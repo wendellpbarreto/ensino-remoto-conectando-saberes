@@ -1,0 +1,67 @@
+.navbar {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: $zindex-fixed;
+
+  .navbar-toggler {
+    background-color: var(--headings-color);
+    color: var(--body-bg);
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+
+    .nav-link {
+      flex-grow: 1;
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: $font-weight-bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &[href="/"] {
+        background-color: map-get($theme-colors, "body-bg");
+        color: map-get($theme-colors, "headings-color");
+      }
+
+      &[href="/sequencia-didatica"] {
+        background-color: map-get($theme-2-colors, "body-bg");
+        color: map-get($theme-2-colors, "headings-color");
+      }
+
+      &[href="/ferramentas-de-checagem"] {
+        background-color: map-get($theme-3-colors, "body-bg");
+        color: map-get($theme-3-colors, "headings-color");
+      }
+
+      &[href="/materiais-e-tutoriais"] {
+        background-color: map-get($theme-5-colors, "body-bg");
+        color: map-get($theme-5-colors, "headings-color");
+      }
+
+      &[href="/referencias"] {
+        background-color: map-get($theme-4-colors, "body-bg");
+        color: map-get($theme-4-colors, "headings-color");
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .navbar {
+    .navbar-nav {
+      .nav-link {
+        flex-basis: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.jssocials-shares {
+  display: flex;
+
+  .jssocials-share {
+    .jssocials-share-link {
+      color: $white;
+      padding: 0.25rem 0.75rem;
+      display: inline-block;
+      transition: $transition-base;
+      min-width: 42px;
+      text-align: center;
+    }
+
+    &:first-child .jssocials-share-link {
+      border-radius: $border-radius-sm 0 0 $border-radius-sm;
+    }
+
+    &:last-child .jssocials-share-link {
+      border-radius: 0 $border-radius-sm $border-radius-sm 0;
+    }
+  }
+
+  @each $label, $color in $social-colors {
+    .jssocials-share-#{$label} .jssocials-share-link {
+      background-color: $color;
+
+      &:hover {
+        background-color: rdarken($color, 5%);
+      }
+    }
+  }
+
+  .jssocials-share-email .jssocials-share-link {
+    background-color: $red;
+
+    &:hover {
+      background-color: darken($red, 5%);
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .jssocials-shares {
+    .jssocials-share {
+      .jssocials-share-link {
+        padding: 0.5rem 1rem;
+        min-width: 44px;
+      }
+    }
+  }
+}

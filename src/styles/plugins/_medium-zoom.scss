@@ -1,0 +1,7 @@
+.medium-zoom-overlay {
+  z-index: $zindex-modal-backdrop;
+}
+
+.medium-zoom-image--opened {
+  z-index: $zindex-modal;
+}

@@ -1,0 +1,12 @@
+.page-header {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@include media-breakpoint-up(md) {
+  .page-header {
+    height: 400px;
+  }
+}

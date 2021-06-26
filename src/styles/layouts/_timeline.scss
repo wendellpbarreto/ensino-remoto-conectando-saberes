@@ -1,0 +1,230 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+
+  &-item {
+    &-sides {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &-divider {
+      width: 10px;
+      background-color: $danger;
+      order: 2;
+      align-self: stretch;
+      flex-shrink: 0;
+    }
+
+    &-side {
+      flex-basis: 100%;
+      flex-shrink: 0;
+      flex-grow: 1;
+      padding: 0 $grid-gutter-width/2;
+      position: relative;
+      text-align: center;
+
+      &:first-child {
+        order: 3;
+      }
+
+      &:last-child {
+        order: 1;
+      }
+    }
+
+    &-side-info {
+      z-index: 1;
+    }
+
+    &-text {
+      font-weight: $font-weight-medium;
+      border-bottom: 6px dashed $red;
+    }
+
+    &-media {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+
+      img {
+        display: block;
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+      }
+    }
+
+    &-btn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      transition: $transition-base;
+      text-decoration: none !important;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--body-bg);
+        opacity: 0.75;
+      }
+
+      i {
+        font-size: 4rem;
+        color: $red;
+        position: relative;
+      }
+    }
+
+    &:hover {
+      .timeline-item-btn {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .timeline {
+    &-item {
+      &-sides {
+        flex-wrap: nowrap;
+      }
+
+      &-side {
+        flex-basis: calc(50% - 5px);
+        padding: 0 $grid-gutter-width;
+        text-align: left;
+
+        &:first-child {
+          order: 1;
+        }
+
+        &:last-child {
+          order: 3;
+        }
+      }
+
+      &:nth-child(even) {
+        .timeline-item-side:first-child {
+          order: 3;
+          text-align: right;
+        }
+
+        .timeline-item-side:last-child {
+          order: 1;
+        }
+      }
+    }
+  }
+}
+
+.timeline.timeline-theme-1 {
+  .timeline-item {
+    &,
+    .timeline-item-btn::before {
+      background-color: #a7e8ce;
+    }
+
+    .timeline-item-subtitle {
+      color: $indigo;
+    }
+
+    .timeline-item-text {
+      border: none;
+    }
+
+    .timeline-item-divider {
+      background-color: transparent;
+    }
+
+    .timeline-item-media img {
+      width: 100%;
+    }
+  }
+
+  .timeline-item:nth-child(even) {
+    &,
+    .timeline-item-btn::before {
+      background-color: #efe9ce;
+    }
+  }
+}
+
+.timeline.timeline-theme-3 {
+  .timeline-item {
+    .timeline-item-side.timeline-item-side-info {
+      background-color: #f8f3f2;
+      padding-top: 1.5rem;
+      // padding-bottom: 2rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        background-color: #f8f3f2;
+        transform: translate(50%, -50%) rotateZ(45deg);
+      }
+    }
+
+    .timeline-item-divider {
+      background-color: transparent;
+    }
+
+    .timeline-item-subtitle {
+      color: $black;
+    }
+
+    .timeline-item-text {
+      border-color: transparent;
+    }
+
+    &:nth-child(even) {
+      .timeline-item-side.timeline-item-side-info {
+        &,
+        &::before {
+          background-color: var(--primary);
+        }
+
+        &::before {
+          right: initial;
+          left: 0;
+          transform: translate(-50%, -50%) rotateZ(45deg);
+        }
+      }
+    }
+  }
+}
+
+.timeline.timeline-theme-5 {
+  .timeline-item {
+    .timeline-item-text {
+      border: none;
+    }
+
+    .timeline-item-divider {
+      background-color: #79ffa0;
+    }
+
+    .timeline-item-pretitle,
+    .timeline-item-title,
+    .timeline-item-subtitle {
+      color: $white;
+    }
+  }
+}

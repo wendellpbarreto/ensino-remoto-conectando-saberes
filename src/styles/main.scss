@@ -1,0 +1,41 @@
+@import "common/variables";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+@import "~bootstrap/scss/bootstrap";
+
+$fa-font-path: "~@fortawesome/fontawesome-pro/webfonts";
+
+@import "~@fortawesome/fontawesome-pro/scss/fontawesome";
+@import "~@fortawesome/fontawesome-pro/scss/brands";
+@import "~@fortawesome/fontawesome-pro/scss/light";
+@import "~@fortawesome/fontawesome-pro/scss/solid";
+@import "~@fortawesome/fontawesome-pro/scss/regular";
+
+// $slick-font-path: "~slick-carousel/slick/fonts/";
+// $slick-font-family: "slick";
+// $slick-loader-path: "~slick-carousel/slick/";
+// $slick-arrow-color: $black;
+
+// @import "~slick-carousel/slick/slick";
+// @import "~slick-carousel/slick/slick-theme";
+@import "~animate.css/animate.min";
+// @import "~simplebar/dist/simplebar.css";
+// @import "~rfs/scss";
+// @import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+
+/** Import theme styles */
+@import "common/global";
+@import "components/buttons";
+@import "components/anchors";
+@import "components/forms";
+@import "components/modals";
+// @import "layouts/page-header";
+// @import "layouts/timeline";
+// @import "layouts/footer";
+// @import "layouts/topbar";
