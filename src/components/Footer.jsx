@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="col-md-3">
             <strong class="d-block text-uppercase mb-3">O Projeto</strong>
             <p className="text-white small font-weight-bold">
-              Trabalho desenvolvido durante a disciplina de Educação Aberta e À
+              Trabalho desenvolvido durante a disciplina de Educação Aberta e A
               Distância do Mestrado Profissional em Inovação em Tecnologias
               Educacionais do PPgITE - IMD / UFRN no ano de 2021.
             </p>
