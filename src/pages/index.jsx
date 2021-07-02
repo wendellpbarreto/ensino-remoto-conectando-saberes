@@ -34,7 +34,7 @@ const InitNowModal = ({ show, onClose }) => {
       </Modal.Header>
       <Modal.Body>
         <span
-          className="w-100 d-block text-center mb-4 small mx-auto"
+          className="w-100 d-block text-center mb-4 small mx-auto mb-4"
           style={{ color: "#c4c4c4", maxWidth: "400px" }}
         >
           Acesse uma das salas para iniciar o curso
