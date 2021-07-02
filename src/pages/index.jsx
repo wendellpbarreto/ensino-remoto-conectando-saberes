@@ -131,21 +131,13 @@ const Home = () => {
   return (
     <>
       <PageHeader onShowInitModal={handleShowInitModal} />
-      <div className="hero w-100 vh-100 container">
+      <div className="hero w-100 vh-100 container text-center text-md-left position-relative">
         <div
           className="h-100"
           style={{ paddingTop: "40px", paddingBottom: "40px" }}
         >
-          <div
-            className="row align-items-center h-100 position-relative"
-            style={{
-              backgroundImage: `url('/art.png')`,
-              backgroundPosition: "right center",
-              backgroundSize: "auto 77.5%",
-              backgroundRepeat: "no-repeat",
-            }}
-          >
-            <div className="col-md-5">
+          <div className="row align-items-center h-100 position-relative hero-inner">
+            <div className="col-md-6 col-lg-5">
               <Fade left>
                 <h2 className="text-secondary text-uppercase d-block">
                   Ensino Remoto
@@ -158,6 +150,7 @@ const Home = () => {
                   remoto, reconhecer os desafios e aprender a extrair o melhor
                   desta metodologia
                 </p>
+                <img src="/art.png" alt="" className="w-100 d-md-none" />
                 <button
                   type="button"
                   className="btn btn-outline-primary mt-4"
@@ -167,8 +160,22 @@ const Home = () => {
                 </button>
               </Fade>
             </div>
+            <div className="col-md-6 col-lg-7">
+              <img
+                src="/art.png"
+                alt=""
+                className="w-100 d-none d-md-block d-lg-none"
+              />
+            </div>
           </div>
         </div>
+
+        <a
+          href="#objetivos"
+          className="hero-down-btn position-absolute bottom-0 start-50 d-none d-md-block"
+        >
+          <i className="fal fa-mouse-alt text-primary"></i>
+        </a>
       </div>
       <div className="container">
         <div
@@ -217,23 +224,23 @@ const Home = () => {
 
         <div
           id="publico-alvo"
-          className="section "
+          className="section text-center text-md-right"
           style={{ marginBottom: "40px" }}
         >
           <div className="row align-items-center justify-content-center">
             <div className="col-md-5 mb-4">
               <Fade left>
-                <div className="pb-5 d-flex flex-column align-items-end">
-                  <h2 className="text-secondary text-uppercase d-block text-right ">
+                <div className="pb-md-5 d-flex flex-column align-items-md-end">
+                  <h2 className="text-secondary text-uppercase d-block  ">
                     Público Alvo
                   </h2>
-                  <h6 className="text-right d-block">
+                  <h6 className=" d-block">
                     Professores da Educação Básica com conhecimento básico em
                     informática.
                   </h6>
                   <button
                     type="button"
-                    className="btn btn-outline-primary mt-4"
+                    className="btn btn-outline-primary mt-4 d-none d-md-block"
                     onClick={handleShowInitModal}
                   >
                     Começe agora!
@@ -245,13 +252,22 @@ const Home = () => {
               <Fade right>
                 <img src="/teacher.png" alt="" className="d-block w-100" />
               </Fade>
+              <div className="d-flex justify-content-center">
+                <button
+                  type="button"
+                  className="btn btn-outline-primary mt-4 d-md-none"
+                  onClick={handleShowInitModal}
+                >
+                  Começe agora!
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <div
           id="conteudo"
-          className="section "
+          className="section text-center text-md-left"
           style={{ marginBottom: "40px" }}
         >
           <div className="row align-items-center">
@@ -263,10 +279,10 @@ const Home = () => {
             <div className="col-md-8 mb-4">
               <Fade bottom>
                 <div className="pb-5">
-                  <h2 className="text-secondary text-uppercase d-block text-left mb-0">
+                  <h2 className="text-secondary text-uppercase d-block  mb-0">
                     Conteúdo
                   </h2>
-                  <p className="mw-400 mx-auto text-left font-weight-bold text-uppercase">
+                  <p className="mw-400 mx-auto  font-weight-bold text-uppercase">
                     Este curso é composto por 7 aulas dispostas em 3 unidades
                   </p>
                 </div>

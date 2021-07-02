@@ -17,8 +17,8 @@ const Footer = () => {
         lattes: "http://lattes.cnpq.br/3768644861934814",
       },
       {
-        name: "Maria Lourena De Queiroz",
-        lattes: "",
+        name: "Maria Lourena De Queiroz, Pedagoga",
+        lattes: "http://lattes.cnpq.br/7369337672076293",
       },
       {
         name: "Ronilson F. da Silva, Prof. de Geografia",

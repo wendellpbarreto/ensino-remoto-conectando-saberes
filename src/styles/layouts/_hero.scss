@@ -1,0 +1,18 @@
+.hero {
+  .hero-btn-down {
+    bottom: 40px;
+    left: 50%;
+    font-size: 1.5rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .hero {
+    .hero-inner {
+      background-image: url("/art.png");
+      background-position: right center;
+      background-size: auto 67.5%;
+      background-repeat: no-repeat;
+    }
+  }
+}
