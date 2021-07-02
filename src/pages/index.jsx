@@ -13,9 +13,30 @@ const InitNowModal = ({ show, onClose }) => {
       href: "https://bit.ly/EnsinoRemotoConectandoSaberesSala1",
     },
     {
-      title: "Sala Acessível",
+      title: "Sala 2",
+      href: "",
+      soon: true,
+    },
+    {
+      title: "Sala 3",
+      href: "",
+      soon: true,
+    },
+    {
+      title: "Sala 4",
+      href: "",
+      soon: true,
+    },
+    {
+      title: "Sala Acessível 1",
       acessible: true,
       href: "https://bit.ly/EnsinoRemotoConectandoSaberesSalaAcessivel",
+    },
+    {
+      title: "Sala Acessível 2",
+      acessible: true,
+      href: "",
+      soon: true,
     },
   ];
 
@@ -45,12 +66,18 @@ const InitNowModal = ({ show, onClose }) => {
 
         <div className="row">
           {rooms.map((room, i) => (
-            <div key={`room-${i}`} className="col-md-4">
+            <div key={`room-${i}`} className="col-md-4 mb-4">
               <Link href={room.href} passHref>
                 <a
                   target="_blank"
-                  className="d-flex flex-column align-items-center justify-content-center text-center border rounded-sm p-4"
-                  style={{ height: "150px" }}
+                  className={`d-flex flex-column align-items-center justify-content-center text-center border rounded-sm p-4 ${
+                    room.soon ? "text-muted disabled" : ""
+                  }`}
+                  style={{
+                    height: "150px",
+                    pointerEvents: room.soon ? "none" : "",
+                    opacity: room.soon ? "0.5" : 1,
+                  }}
                 >
                   <i
                     className={`fad fa-${
@@ -59,8 +86,13 @@ const InitNowModal = ({ show, onClose }) => {
                   ></i>
                   <p className="m-0">
                     {room.title}
-                    {room.acessible ? (
-                      <small className="d-block">Em Libras</small>
+                    {!room.soon && room.acessible ? (
+                      <small className="d-block">Libras</small>
+                    ) : (
+                      ""
+                    )}
+                    {room.soon ? (
+                      <small className="d-block text-muted">(em breve)</small>
                     ) : (
                       ""
                     )}
@@ -84,10 +116,13 @@ const Home = () => {
       slug: "unit-1",
       title: "Do ensino presencial ao ensino virtual",
       lessons: [
-        { number: 1, title: "O que é ensino remoto?" },
+        {
+          number: 1,
+          title: "Diferença entre ensino remoto e educação a distância",
+        },
         {
           number: 2,
-          title: "Diferença entre ensino remoto e educação a distância",
+          title: "Organização didática no ensino remoto?",
         },
       ],
     },
