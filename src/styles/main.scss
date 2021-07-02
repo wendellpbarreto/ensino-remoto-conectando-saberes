@@ -9,13 +9,13 @@
 // @import "~some-node-module";
 @import "~bootstrap/scss/bootstrap";
 
-// $fa-font-path: "~@fortawesome/fontawesome-pro/webfonts";
+$fa-font-path: "~@fortawesome/fontawesome-pro/webfonts";
 
-// @import "~@fortawesome/fontawesome-pro/scss/fontawesome";
-// @import "~@fortawesome/fontawesome-pro/scss/brands";
-// @import "~@fortawesome/fontawesome-pro/scss/light";
-// @import "~@fortawesome/fontawesome-pro/scss/solid";
-// @import "~@fortawesome/fontawesome-pro/scss/regular";
+@import "~@fortawesome/fontawesome-pro/scss/fontawesome";
+@import "~@fortawesome/fontawesome-pro/scss/brands";
+@import "~@fortawesome/fontawesome-pro/scss/light";
+@import "~@fortawesome/fontawesome-pro/scss/solid";
+@import "~@fortawesome/fontawesome-pro/scss/regular";
 
 // $slick-font-path: "~slick-carousel/slick/fonts/";
 // $slick-font-family: "slick";
@@ -38,5 +38,5 @@
 @import "components/accordion";
 // @import "layouts/page-header";
 @import "layouts/sections";
-// @import "layouts/footer";
+@import "layouts/footer";
 // @import "layouts/topbar";
