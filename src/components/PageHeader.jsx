@@ -37,7 +37,7 @@ const PageHeader = ({ onShowInitModal }) => {
                   Conteúdo
                 </Nav.Link>
               </Link>
-              <Link href="#metogolodia" passHref>
+              <Link href="#metodologia" passHref>
                 <Nav.Link as="a" className="text-primary fw-bold mx-2">
                   Metogologia
                 </Nav.Link>
