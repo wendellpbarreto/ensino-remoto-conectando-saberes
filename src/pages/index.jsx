@@ -172,7 +172,7 @@ const Home = () => {
 
         <a
           href="#objetivos"
-          className="hero-down-btn position-absolute bottom-0 start-50 d-none d-md-block"
+          className="hero-btn-down position-absolute bottom-0 start-50 d-none d-md-block"
         >
           <i className="fal fa-mouse-alt text-primary"></i>
         </a>
