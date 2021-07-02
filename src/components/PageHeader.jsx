@@ -6,10 +6,10 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 const PageHeader = ({ title, subtitle }) => {
   return (
     <>
-      <Navbar bg="none" expand="lg" fixed="top" className="pt-3">
+      <Navbar bg="white" expand="lg" fixed="top" className="py-2">
         <Container>
           <Navbar.Brand href="/">
-            <img
+            <Image
               src="/logo.png"
               width="56"
               height="56"
@@ -22,35 +22,23 @@ const PageHeader = ({ title, subtitle }) => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto align-items-center">
-              <Link href="/">
-                <Nav.Link as="a" href="/" className="text-primary fw-bold mx-2">
+              <Link href="#objetivos" passHref>
+                <Nav.Link as="a" className="text-primary fw-bold mx-2">
                   Objetivos
                 </Nav.Link>
               </Link>
-              <Link href="/sequencia-didatica">
-                <Nav.Link
-                  as="a"
-                  href="/sequencia-didatica"
-                  className="text-primary fw-bold mx-2"
-                >
+              <Link href="#publico-alvo" passHref>
+                <Nav.Link as="a" className="text-primary fw-bold mx-2">
                   Público Alvo
                 </Nav.Link>
               </Link>
-              <Link href="/ferramentas-de-checagem">
-                <Nav.Link
-                  as="a"
-                  href="/ferramentas-de-checagem"
-                  className="text-primary fw-bold mx-2"
-                >
+              <Link href="#conteudo" passHref>
+                <Nav.Link as="a" className="text-primary fw-bold mx-2">
                   Conteúdo
                 </Nav.Link>
               </Link>
-              <Link href="/materiais-e-tutoriais">
-                <Nav.Link
-                  as="a"
-                  href="/materiais-e-tutoriais"
-                  className="text-primary fw-bold mx-2"
-                >
+              <Link href="#metogolodia" passHref>
+                <Nav.Link as="a" className="text-primary fw-bold mx-2">
                   Metogologia
                 </Nav.Link>
               </Link>

@@ -1,0 +1,26 @@
+.accordion {
+  & > .card {
+    border-radius: 1rem;
+    border-color: $gray-200;
+
+    .card-header {
+      padding: 0;
+
+      button {
+        border-radius: 1rem;
+        text-align: left;
+        display: block;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: none;
+      }
+    }
+  }
+
+  & > .card:not(:last-of-type) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
