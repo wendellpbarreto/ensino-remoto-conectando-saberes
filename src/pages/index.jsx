@@ -18,6 +18,7 @@ const InitNowModal = ({ show, onClose }) => {
       href: "https://bit.ly/EnsinoRemotoConectandoSaberesSalaAcessivel",
     },
   ];
+
   return (
     <Modal show={show} onHide={onClose} size="lg" centered>
       <Modal.Header
@@ -97,7 +98,7 @@ const Home = () => {
       lessons: [
         { number: 1, title: "Ambientes virtuais de aprendizagem" },
         { number: 2, title: "Ferramentas para o ensino remoto" },
-        { number: 2, title: "Avaliação remota" },
+        { number: 3, title: "Avaliação remota" },
       ],
     },
     {
@@ -106,7 +107,7 @@ const Home = () => {
       title: "Algumas reflexões",
       lessons: [
         { number: 1, title: "Competências digitais na Educação" },
-        { number: 2, title: "Conclusão " },
+        { number: 2, title: "Conclusão" },
       ],
     },
   ];
