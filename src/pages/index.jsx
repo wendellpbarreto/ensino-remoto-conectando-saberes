@@ -132,10 +132,7 @@ const Home = () => {
     <>
       <PageHeader onShowInitModal={handleShowInitModal} />
       <div className="hero w-100  container text-center text-md-left position-relative">
-        <div
-          className="h-100"
-          style={{ paddingTop: "40px", paddingBottom: "40px" }}
-        >
+        <div className="h-100">
           <div className="row align-items-center h-100 position-relative hero-inner">
             <div className="col-md-6 col-lg-5">
               <Fade left>
@@ -335,7 +332,7 @@ const Home = () => {
           <div className="row align-items-center justify-content-center mb-5">
             <Fade bottom>
               {methodologyItems.map((mItem) => (
-                <div key={mItem.slug} className="col-md-3">
+                <div key={mItem.slug} className="col-md-3 mb-4">
                   <div
                     className="d-flex flex-column align-items-center justify-content center text-center background-light-primary rounded-sm px-3 py-5 mx-3 rounded bg-light-primary"
                     style={{ backgroundColor: "rgb(234 242 246 / 18%)" }}
