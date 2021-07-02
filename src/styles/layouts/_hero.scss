@@ -1,4 +1,8 @@
 .hero {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  min-height: 100vh;
+
   .hero-btn-down {
     bottom: 40px;
     left: 50%;
@@ -8,6 +12,8 @@
 
 @include media-breakpoint-up(lg) {
   .hero {
+    height: 100vh;
+
     .hero-inner {
       background-image: url("/art.png");
       background-position: right center;

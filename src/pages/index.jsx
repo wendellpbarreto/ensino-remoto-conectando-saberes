@@ -131,7 +131,7 @@ const Home = () => {
   return (
     <>
       <PageHeader onShowInitModal={handleShowInitModal} />
-      <div className="hero w-100 vh-100 container text-center text-md-left position-relative">
+      <div className="hero w-100  container text-center text-md-left position-relative">
         <div
           className="h-100"
           style={{ paddingTop: "40px", paddingBottom: "40px" }}
