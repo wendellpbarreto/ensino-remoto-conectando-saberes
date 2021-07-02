@@ -37,7 +37,7 @@ const Footer = () => {
         lattes: "http://lattes.cnpq.br/3674680088104212",
       },
       {
-        name: "Maria da Conceição A. Moreno",
+        name: "Maria da Conceição A. Moreno, Pedagoga",
         lattes: "http://lattes.cnpq.br/2619341666625630",
       },
     ],
