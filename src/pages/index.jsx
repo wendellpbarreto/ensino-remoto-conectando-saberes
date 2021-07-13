@@ -80,7 +80,7 @@ const InitNowModal = ({ show, onClose }) => {
                   }}
                 >
                   <i
-                    className={`fad fa-${
+                    className={`fa fa-${
                       room.acessible ? "sign-language" : "arrow-from-left"
                     } fa-2x mb-3`}
                   ></i>
@@ -239,8 +239,7 @@ const Home = () => {
                   <br />
                   - Diferenciar o ensino remoto da educação a distância;
                   <br />
-                  - Conhecer possíveis Ambientes virtuais de aprendizagem para o
-                  ensino remoto;
+                  - Compreender a organização didática do ensino remoto;;
                   <br />
                   - Conhecer ferramentas digitais que podem ser utilizadas
                   remotamente;
