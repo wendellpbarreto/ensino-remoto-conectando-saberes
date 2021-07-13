@@ -15,17 +15,14 @@ const InitNowModal = ({ show, onClose }) => {
     {
       title: "Sala 2",
       href: "https://bit.ly/EnsinoRemotoConectandoSaberesSala2",
-      soon: true,
     },
     {
       title: "Sala 3",
       href: "https://bit.ly/EnsinoRemotoConectandoSaberesSala3",
-      soon: true,
     },
     {
       title: "Sala 4",
       href: "https://bit.ly/EnsinoRemotoConectandoSaberesSala4",
-      soon: true,
     },
     {
       title: "Sala Acessível 1",
@@ -36,7 +33,6 @@ const InitNowModal = ({ show, onClose }) => {
       title: "Sala Acessível 2",
       acessible: true,
       href: "https://bit.ly/EnsinoRemotoConectandoSaberesSalaAcessivel2",
-      soon: true,
     },
   ];
 
