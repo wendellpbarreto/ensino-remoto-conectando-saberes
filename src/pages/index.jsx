@@ -14,28 +14,28 @@ const InitNowModal = ({ show, onClose }) => {
     },
     {
       title: "Sala 2",
-      href: "",
+      href: "https://bit.ly/EnsinoRemotoConectandoSaberesSala2",
       soon: true,
     },
     {
       title: "Sala 3",
-      href: "",
+      href: "https://bit.ly/EnsinoRemotoConectandoSaberesSala3",
       soon: true,
     },
     {
       title: "Sala 4",
-      href: "",
+      href: "https://bit.ly/EnsinoRemotoConectandoSaberesSala4",
       soon: true,
     },
     {
       title: "Sala Acessível 1",
       acessible: true,
-      href: "https://bit.ly/EnsinoRemotoConectandoSaberesSalaAcessivel",
+      href: "https://bit.ly/EnsinoRemotoConectandoSaberesSalaAcessivel1",
     },
     {
       title: "Sala Acessível 2",
       acessible: true,
-      href: "",
+      href: "https://bit.ly/EnsinoRemotoConectandoSaberesSalaAcessivel2",
       soon: true,
     },
   ];
