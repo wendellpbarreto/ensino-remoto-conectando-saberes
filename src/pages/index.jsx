@@ -114,7 +114,7 @@ const Home = () => {
     {
       number: 0,
       slug: "unit-1",
-      title: "Do ensino presencial ao ensino virtual",
+      title: "Do presencial ao virtual",
       lessons: [
         {
           number: 1,
@@ -129,7 +129,7 @@ const Home = () => {
     {
       number: 1,
       slug: "unit-2",
-      title: "Ensino Remoto: possibilidades e desafios",
+      title: "Possibilidades e desafios",
       lessons: [
         { number: 1, title: "Ambientes virtuais de aprendizagem" },
         { number: 2, title: "Ferramentas para o ensino remoto" },
@@ -139,7 +139,7 @@ const Home = () => {
     {
       number: 2,
       slug: "unit-3",
-      title: "Algumas reflexões",
+      title: "Competências digitais",
       lessons: [
         { number: 1, title: "Competências digitais na Educação" },
         { number: 2, title: "Conclusão" },

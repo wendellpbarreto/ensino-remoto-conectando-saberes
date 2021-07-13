@@ -22,14 +22,14 @@ const PageHeader = ({ onShowInitModal }) => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto align-items-center">
-              <Link href="#publico-alvo" passHref>
-                <Nav.Link as="a" className="text-primary fw-bold mx-2">
-                  Público Alvo
-                </Nav.Link>
-              </Link>
               <Link href="#objetivos" passHref>
                 <Nav.Link as="a" className="text-primary fw-bold mx-2">
                   Objetivos
+                </Nav.Link>
+              </Link>
+              <Link href="#publico-alvo" passHref>
+                <Nav.Link as="a" className="text-primary fw-bold mx-2">
+                  Público Alvo
                 </Nav.Link>
               </Link>
               <Link href="#conteudo" passHref>
