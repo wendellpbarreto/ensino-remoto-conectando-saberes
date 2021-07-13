@@ -38,10 +38,10 @@ const MyApp = ({ Component, pageProps }) => {
           rel="stylesheet"
         />
 
-        <script
+        {/* <script
           src="https://kit.fontawesome.com/70f4d2f6e0.js"
-          crossorigin="anonymous"
-        />
+          crossOrigin="anonymous"
+        /> */}
       </Head>
       <div className="wrap">
         <Component {...pageProps} />

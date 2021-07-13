@@ -150,13 +150,13 @@ const Home = () => {
   const methodologyItems = [
     {
       slug: "video",
-      icon: "fad fa-video",
+      icon: "fa fa-video",
       text: "Vídeos expositivos sobre os temas",
     },
-    { slug: "materials", icon: "fad fa-copy", text: "Material das aulas" },
+    { slug: "materials", icon: "fa fa-copy", text: "Material das aulas" },
     {
       slug: "activities",
-      icon: "fad fa-ballot-check",
+      icon: "fa fa-ballot-check",
       text: "Atividades sobre os temas",
     },
   ];
